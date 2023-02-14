@@ -18,7 +18,6 @@ namespace 脚本
             {
                 myLight.enabled = !myLight.enabled;
             }
-            myLight.intensity = Mathf.Lerp(myLight.intensity, 8f, 0.5f * Time.deltaTime);
         }
     }
     

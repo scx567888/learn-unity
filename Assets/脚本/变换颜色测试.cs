@@ -34,7 +34,11 @@ namespace 脚本
             }
         }
 
-       
+        void OnMouseDown ()
+        {
+            GetComponent<Rigidbody>() .AddForce(-transform.forward * 500f);
+            GetComponent<Rigidbody>() .useGravity = true;
+        }
 
     }
 }
