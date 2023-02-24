@@ -10,7 +10,12 @@ namespace 脚本
         // Start is called before the first frame update
         void Start()
         {
-            Destroy(gameObject,100f);        
+            Invoke(nameof(aaa),5f);
+        }
+
+        void aaa()
+        {
+            Destroy(gameObject);
         }
 
         // Update is called once per frame
